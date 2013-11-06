@@ -1,0 +1,14 @@
+Python 2.7.5 (default, May 15 2013, 22:43:36) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> def fract(x):
+	if x==1 or x==2:
+		return 1
+	else:
+		return fract(x-1)+fract(x-2)
+
+		
+>>> fract(33),fract(34)
+(3524578, 5702887)
+>>> fract(3)+fract(6)+fract(9)+fract(12)+fract(15)+fract(18)+fract(21)+fract(24)+fract(27)+fract(30)+fract(33)
+4613732
+>>> 

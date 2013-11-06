@@ -1,0 +1,39 @@
+Python 2.7.5 (default, May 15 2013, 22:43:36) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> def pds(x,y):
+	a=x
+	b=y
+	c=y-x
+	d=x
+	while d<=b:
+		z=b*d
+		if palindrome(z) == True and len(str(z))==6 and z>900000:
+			print z
+			d=d+1
+		else:
+			d=d+1
+	if y>=x:
+		pds(x,y-1)
+
+		
+>>> def palindrome(x):
+	x=str(x)
+	y=len(x)-1
+	if y<=0:
+		return True
+	if y==1:
+		if x[0]==x[y]:
+			return True
+		if x[0]!=x[y]:
+			return False
+	else:
+		if x[0]==x[y]:
+			return palindrome(x
+[1:y])
+		else:
+			return False
+
+		
+>>> pds(100,999)
+906609
+>>> 

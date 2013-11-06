@@ -1,0 +1,56 @@
+Python 2.7.5 (default, May 15 2013, 22:43:36) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> def prime(x):
+	a=2
+	if x==2:
+		return True
+	if x<2:
+		return False
+	while a!=x:
+		if x%a==0:
+			return False
+			a=a+1
+		else:
+			a=a+1
+
+			
+>>> def primefactorsof(x):
+	y=int(x**0.5)+1
+	while y>0:
+		if x%y==0:
+			z=(x/y)
+			print y, prime(y)
+			print z, prime(z)
+			print ' '
+			y=y-2
+		else:
+			y=y-2
+
+			
+>>> 
+primefactorsof(600851475143)
+486847 False
+1234169 False
+ 
+104441 False
+5753023 False
+ 
+59569 False
+10086647 False
+ 
+6857 None
+87625999 False
+ 
+1471 None
+408464633 False
+ 
+839 None
+716151937 False
+ 
+71 None
+8462696833 False
+ 
+1 False
+600851475143 False
+ 
+>>> 
