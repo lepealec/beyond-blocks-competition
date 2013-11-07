@@ -1,0 +1,17 @@
+Python 2.7.5 (default, May 15 2013, 22:43:36) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import random
+>>> def ra(sum):
+	sum==0
+	a=random.randrange(1,sum)
+	b=random.randrange(1,sum)
+	c=sum-a-b
+	while a**2+b**2!=c**2:
+		a=random.randrange(1,sum)
+		b=random.randrange(1,sum)
+		c=sum-a-b
+	return a,b,c,a*b*c,sum
+
+>>> ra(1000)
+(200, 375, 425, 31875000, 1000)
+>>> 
